@@ -1,0 +1,141 @@
+/*
+    Version: 1.22.0
+    Last Modified: 2025-08-08
+    Author: Maxim
+    Contact: https://www.maxim.pe.kr
+    License: © 2025 Maxim. All Rights Reserved.
+    Theme: NOAH INTERIOR - Wood Theme
+*/
+
+/* =================================================================
+   1. Theme Variables
+================================================================= */
+
+:root {
+    /* Light Mode Defaults - Wood Theme */
+    --bg-primary: #FCFBF8; /* Slightly warm white */
+    --bg-secondary: #F4F1EC; /* Beige tone background */
+    --bg-navbar-animated: linear-gradient(45deg, rgba(252, 251, 248, 0.8), rgba(244, 241, 236, 0.85), rgba(252, 251, 248, 0.8));
+    --bg-footer: #3E2723; /* Dark brown */
+    --bg-card: #FFFFFF;
+    --bg-lang-switcher: #EFEBE9;
+    --bg-lang-switcher-hover: #D7CCC8;
+    --bg-lang-switcher-active: #8B4513; /* SaddleBrown */
+    --bg-nav-icon-button: #8B4513;
+    --bg-nav-icon-button-hover: #A0522D; /* Sienna */
+    --bg-to-top-button: rgba(139, 69, 19, 0.7);
+    --bg-to-top-button-hover: rgba(139, 69, 19, 0.9);
+    --bg-overlay: rgba(62, 39, 35, 0.55); /* Dark brown overlay */
+    --bg-cta-button: #8B4513;
+    --bg-cta-button-hover: #A0522D;
+    --bg-price-info: #F4F1EC;
+    --bg-offer-badge: #8B4513;
+    --bg-price-image-placeholder: #EFEBE9;
+    --bg-modal: var(--bg-card);
+    --bg-modal-button: var(--bg-cta-button);
+    --bg-modal-button-hover: var(--bg-cta-button-hover);
+
+    --text-primary: #3E2723;
+    --text-secondary: #5D4037; /* Mid-tone brown */
+    --text-headings: #3E2723;
+    --text-accent: #8B4513; /* SaddleBrown */
+    --text-accent-hover: #A0522D; /* Sienna */
+    --text-footer: #D7CCC8;
+    --text-navbar: #3E2723;
+    --text-lang-switcher: #5D4037;
+    --text-lang-switcher-active: #FFFFFF;
+    --text-nav-icon-button: #FFFFFF;
+    --text-to-top-button: #FFFFFF;
+    --text-home-title: #FFFFFF;
+    --text-home-subtitle: #F5F5F5;
+    --text-price-meta: #6D4C41;
+    --text-section-title-icon: #A1887F;
+    --text-cta-button: #FFFFFF;
+    --text-offer-badge: #FFFFFF;
+    --text-modal: var(--text-primary);
+    --text-modal-button: var(--text-cta-button);
+
+    --border-card: #E0E0E0;
+    --border-navbar-bottom: rgba(62, 39, 35, 0.1);
+    --border-section-heading-underline: #8B4513;
+
+    --shadow-card: rgba(62, 39, 35, 0.08);
+    --shadow-card-hover: rgba(62, 39, 35, 0.15);
+    --shadow-navbar: rgba(0, 0, 0, 0.05);
+    --shadow-home-text: rgba(0, 0, 0, 0.4);
+    --shadow-home-subtitle-text: rgba(0, 0, 0, 0.6);
+    --shadow-offer-badge: rgba(0, 0, 0, 0.2);
+
+    --image-filter-default: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark Mode Defaults - Wood Theme */
+        --bg-primary: #1c1817;
+        --bg-secondary: #252120;
+        --bg-navbar-animated: linear-gradient(45deg, rgba(28, 24, 23, 0.8), rgba(37, 33, 32, 0.85), rgba(28, 24, 23, 0.8));
+        --bg-footer: #121212;
+        --bg-card: #2f2a29;
+        --bg-lang-switcher: #3e3836;
+        --bg-lang-switcher-hover: #4e4846;
+        --bg-lang-switcher-active: #D2B48C; /* Tan */
+        --bg-nav-icon-button: #D2B48C;
+        --bg-nav-icon-button-hover: #E6CFAA;
+        --bg-to-top-button: rgba(210, 180, 140, 0.7);
+        --bg-to-top-button-hover: rgba(210, 180, 140, 0.9);
+        --bg-overlay: rgba(0, 0, 0, 0.65);
+        --bg-cta-button: #D2B48C;
+        --bg-cta-button-hover: #E6CFAA;
+        
+        --text-primary: #e0e0e0;
+        --text-secondary: #BCAAA4;
+        --text-headings: #FFFFFF;
+        --text-accent: #D2B48C; /* Tan */
+        --text-accent-hover: #E6CFAA;
+        --text-footer: #888888;
+        --text-navbar: #e0e0e0;
+        --text-lang-switcher: #e0e0e0;
+        --text-lang-switcher-active: #121212;
+        --text-nav-icon-button: #121212;
+        --text-to-top-button: #121212;
+        --text-price-meta: #BCAAA4;
+        --text-section-title-icon: #A1887F;
+        --text-cta-button: #1c1817;
+
+        --border-card: #4a4442;
+        --border-navbar-bottom: rgba(210, 180, 140, 0.2);
+        --border-section-heading-underline: #D2B48C;
+
+        --shadow-card: rgba(0, 0, 0, 0.2);
+        --shadow-card-hover: rgba(0, 0, 0, 0.3);
+        --shadow-navbar: rgba(0, 0, 0, 0.2);
+        --shadow-home-text: rgba(0, 0, 0, 0.5);
+        --shadow-home-subtitle-text: rgba(0, 0, 0, 0.7);
+
+        --image-filter-default: brightness(0.9) contrast(1.05);
+    }
+}
+
+/* =================================================================
+   2. Custom Fonts & Base Styles
+================================================================= */
+body {
+    font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+}
+
+#navbar .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#home h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: clamp(2.8rem, 1rem + 6vw, 4.5rem);
+}
+
+#home h1 strong {
+    font-weight: 700;
+}
