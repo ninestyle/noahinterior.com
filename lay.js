@@ -22,7 +22,7 @@ const siteConfig = {
     ],
 
     // === API Settings ===
-    API_BASE_PATH: 'https://www.maxim.pe.kr/api',
+    API_BASE_PATH: 'https://agency.maxim.kr/api',
     TURNSTILE_SITE_KEY: '0x4AAAAAACA4Lf2CF7viYhbJ',
 };
 
