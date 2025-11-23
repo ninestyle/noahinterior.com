@@ -1,9 +1,15 @@
 {
     "_default": {
-        "copyright_text": "&copy; ${year} NOAH INTERIOR. All Rights Reserved."
+        "address_text": "전라북도 전주시 완산구 평화동1가 589-21",
+        "name_text": "김영진",
+        "office_label_name": "대표:",
+        "office_label_phone": "연락처:",
+        "office_label_email": "이메일:",
+        "location_label_address": "주소:"
     },
     "ko": {
         "site_title": "노아인테리어 - 목공 & 목조주택 전문",
+        "meta_description": "노아인테리어는 내장 목공, 목조 주택 전문 업체입니다.",
         "home_subtitle": "전주 및 전라북도 무료 출장 상담",
         "services_title": "주요 사업",
         "services_desc": "고객님의 공간에 맞춘 전문적인 목공 서비스를 제공합니다.",
@@ -23,19 +29,8 @@
         "portfolio_04_desc": "공간에 딱 맞는 나만의 가구 제작",
         "location_title": "사업장 위치",
         "location_desc": "노아인테리어는 전라북도 전주시에 위치하고 있습니다.",
-        "location_label_address": "주소:",
-        "address_text": "전라북도 전주시 완산구 평화동1가 589-21",
         "office_title": "연락처",
-        "office_desc": "궁금한 점이 있으시면 언제든지 문의해 주세요.",
-        "office_label_name": "대표:",
-        "name_text": "김영진",
-        "office_label_phone": "연락처:",
-        "office_label_email": "이메일:",
-        "contact_title_api": "문의하기",
-        "contact_desc_api": "궁금한 점은 언제든지 편하게 문의해 주세요.",
-        "contact_placeholder_email": "이메일 주소를 입력하세요",
-        "contact_placeholder_message": "문의 내용을 입력하세요",
-        "contact_button_api": "메시지 보내기"
+        "office_desc": "궁금한 점이 있으시면 언제든지 문의해 주세요."
     },
     "en": {
         "site_title": "NOAH INTERIOR - Woodworking & Wooden House Specialist",
@@ -58,19 +53,12 @@
         "portfolio_04_desc": "Creating your own furniture that fits your space perfectly.",
         "location_title": "Location",
         "location_desc": "NOAH INTERIOR is located in Jeonju, Jeollabuk-do.",
-        "location_label_address": "Address:",
-        "address_text": "589-21 Pyeonghwa-dong 1-ga, Wansan-gu, Jeonju-si, Jeollabuk-do",
         "office_title": "Contact Info",
         "office_desc": "Please feel free to contact us if you have any questions.",
         "office_label_name": "Representative:",
-        "name_text": "Kim Young-jin",
         "office_label_phone": "Phone:",
         "office_label_email": "Email:",
-        "contact_title_api": "Contact Us",
-        "contact_desc_api": "Inquiries are always welcome. Please feel free to reach out.",
-        "contact_placeholder_email": "Your Email Address",
-        "contact_placeholder_message": "Your Message",
-        "contact_button_api": "Send Message"
+        "location_label_address": "Address:"
     },
     "vi": {
         "site_title": "NOAH INTERIOR - Chuyên gia về Mộc & Nhà gỗ",
@@ -93,18 +81,11 @@
         "portfolio_04_desc": "Tạo ra đồ nội thất của riêng bạn phù hợp hoàn hảo với không gian của bạn.",
         "location_title": "Vị trí",
         "location_desc": "NOAH INTERIOR đặt tại Jeonju, Jeollabuk-do.",
-        "location_label_address": "Địa chỉ:",
-        "address_text": "589-21 Pyeonghwa-dong 1-ga, Wansan-gu, Jeonju-si, Jeollabuk-do",
         "office_title": "Thông tin liên hệ",
         "office_desc": "Nếu bạn có bất kỳ câu hỏi nào, xin vui lòng liên hệ.",
         "office_label_name": "Đại diện:",
-        "name_text": "Kim Young-jin",
         "office_label_phone": "Điện thoại:",
         "office_label_email": "Email:",
-        "contact_title_api": "Liên hệ",
-        "contact_desc_api": "Vui lòng liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi nào.",
-        "contact_placeholder_email": "Địa chỉ email của bạn",
-        "contact_placeholder_message": "Nội dung tin nhắn",
-        "contact_button_api": "Gửi tin nhắn"
+        "location_label_address": "Địa chỉ:"
     }
 }

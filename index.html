@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="노아인테리어는 내장 목공, 목조 주택 전문 업체입니다.">
+    
+    <title data-lang="site_title">노아인테리어 - 목공 & 목조주택 전문</title>
+    <meta name="description" data-lang="meta_description" content="노아인테리어는 내장 목공, 목조 주택 전문 업체입니다. 전주 및 전라북도 무료 출장 상담.">
     <meta name="keywords" content="노아인테리어, 전주 인테리어, 목공, 목조주택, 내장목공, 상업공간, 주거공간">
-    <link rel="canonical" href="https://www.noahinterior.com/" />
-    <meta property="og:title" content="노아인테리어 | 목공 & 목조주택 전문">
-    <meta property="og:description" content="노아인테리어는 내장 목공, 목조 주택 전문 업체입니다.">
-    <meta property="og:image" content="https://www.noahinterior.com/section/slide_01.jpg">
+    
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.noahinterior.com">
     <meta property="og:site_name" content="노아인테리어">
-    <title data-lang="site_title">노아인테리어 - 목공 & 목조주택 전문</title>
+    <meta property="og:title" data-lang="site_title" content="노아인테리어 - 목공 & 목조주택 전문">
+    <meta property="og:description" data-lang="meta_description" content="노아인테리어는 내장 목공, 목조 주택 전문 업체입니다.">
+    <meta property="og:image" content="https://www.noahinterior.com/section/slide_01.jpg">
+    
+    <link rel="canonical" href="https://www.noahinterior.com/">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap">
     
-    <!-- V2 Core CSS -->
-    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/page-v2.css">
-    <!-- V2 User Theme CSS -->
-    <link rel="stylesheet" href="./lay.css">
+    <!-- [Tier 1] Express Core V3 -->
+    <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/express-v3.css">
+    <script src="https://cdn.9style.com/_inc/express/express-v3.js"></script>
 
-    <!-- V2 Turnstile API Script -->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
-    
-    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <!-- [Tier 2] Page Express V3 -->
+    <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/page/page-v3.css">
+    <script src="https://cdn.9style.com/_inc/express/page/page-v3.js"></script>
+
+    <!-- [Tier 3] User Theme -->
+    <link rel="stylesheet" href="./lay.css">
 </head>
 <body>
-    <!-- V2 BEM: .pe-nav -->
+    <!-- Navigation -->
     <nav class="pe-nav">
         <div class="pe-nav__container">
             <a href="#home" class="pe-nav__logo">NOAH INTERIOR</a>
@@ -37,28 +44,26 @@
                     <button data-lang-set="en">EN</button>
                     <button data-lang-set="vi">VI</button>
                 </div>
-                <!-- V1 nav-icon-button removed, V2 icon_buttons will be injected into .pe-header -->
             </div>
         </div>
     </nav>
 
-    <!-- V2 BEM: .pe-header (content only) -->
+    <!-- Header -->
     <header id="home" class="pe-header">
-        <!-- V2 JS will inject: .bg-image-slider, .pe-overlay, .slide-indicators -->
         <div class="pe-header__content js-parallax-content">
             <h1 class="pe-header__title"><strong>NOAH</strong> INTERIOR</h1>
             <p class="pe-header__subtitle" data-lang="home_subtitle">전주 및 전라북도 무료 출장 상담</p>
-            <!-- V2 JS will inject: .ce-button-group (from lay.js config) -->
+            <!-- Icon buttons injected by lay.js -->
         </div>
     </header>
 
     <main>
-        <!-- V2 BEM: .pe-section, .pe-container, .pe-section__description -->
+        <!-- Services Section -->
         <section id="services" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2 data-lang="services_title"><span translate="no" class="material-symbols-outlined notranslate">store</span>주요 사업</h2>
                 <p class="pe-section__description" data-lang="services_desc">고객님의 공간에 맞춘 전문적인 목공 서비스를 제공합니다.</p>
-                <!-- V2 BEM: .pe-grid, .pe-grid--cols-2, .pe-card -->
+                
                 <div class="pe-grid pe-grid--cols-2">
                     <div class="pe-card">
                         <div class="pe-card__content">
@@ -76,11 +81,12 @@
             </div>
         </section>
 
+        <!-- Portfolio Section -->
         <section id="portfolio" class="pe-section pe-section--secondary js-fade-in">
             <div class="pe-container">
                 <h2 data-lang="portfolio_title"><span translate="no" class="material-symbols-outlined notranslate">style</span>시공 사례</h2>
                 <p class="pe-section__description" data-lang="portfolio_desc">노아인테리어의 전문적인 시공 포트폴리오를 만나보세요.</p>
-                <!-- V2 BEM: .pe-card__image-wrapper, .pe-card__image -->
+                
                 <div class="pe-grid pe-grid--cols-2">
                     <div class="pe-card">
                         <div class="pe-card__image-wrapper js-lightbox-trigger">
@@ -122,11 +128,12 @@
             </div>
         </section>
 
-        <!-- V2 BEM: .pe-map-wrapper, .pe-address-block -->
+        <!-- Location Section -->
         <section id="location" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2 data-lang="location_title"><span translate="no" class="material-symbols-outlined notranslate">location_on</span>사업장 위치</h2>
                 <p class="pe-section__description" data-lang="location_desc">노아인테리어는 전라북도 전주시에 위치하고 있습니다.</p>
+                
                 <div class="pe-map-wrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.0952164429136!2d127.1333147125446!3d35.79759572345647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357024c8b27f3c7b%3A0x1f5410357b65375d!2z7KCE67aB7Yq567OE7J6Q7LmY64-EIOyghOyjvOyLnCDsmYTsgrDqtawg7Y-J7ZmU64-ZMeqwgCA1ODktMjE!5e0!3m2!1sko!2skr!4v1748328942749!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -136,26 +143,22 @@
             </div>
         </section>
 
-        <!-- V1 'contact' section renamed to 'office' -->
-        <!-- V2 BEM: .pe-contact-list, .pe-contact-list__item, .pe-contact-list__label, .pe-contact-list__value -->
+        <!-- Office/Contact Info Section -->
         <section id="office" class="pe-section pe-section--secondary js-fade-in">
             <div class="pe-container">
-                <!-- V2 lang key updated: office_title -->
                 <h2 data-lang="office_title"><span translate="no" class="material-symbols-outlined notranslate">contact_mail</span>연락처</h2>
                 <p class="pe-section__description" data-lang="office_desc">궁금한 점이 있으시면 언제든지 문의해 주세요.</p>
+                
                 <div class="pe-contact-list">
                     <div class="pe-contact-list__item">
-                        <!-- V2 lang key updated: office_label_name -->
                         <span class="pe-contact-list__label" data-lang="office_label_name">대표:</span>
                         <span class="pe-contact-list__value" data-lang="name_text">김영진</span>
                     </div>
                     <div class="pe-contact-list__item">
-                        <!-- V2 lang key updated: office_label_phone -->
                         <span class="pe-contact-list__label" data-lang="office_label_phone">연락처:</span>
                         <a href="tel:0507-1362-4791" class="pe-contact-list__value">0507-1362-4791</a>
                     </div>
                     <div class="pe-contact-list__item">
-                        <!-- V2 lang key updated: office_label_email -->
                         <span class="pe-contact-list__label" data-lang="office_label_email">이메일:</span>
                         <a href="mailto:cs@noahinterior.com" class="pe-contact-list__value">cs@noahinterior.com</a>
                     </div>
@@ -163,27 +166,26 @@
             </div>
         </section>
 
-        <!-- NEW V2 API Contact Section -->
+        <!-- Contact Form Section -->
         <section id="contact" class="pe-section js-fade-in">
             <div class="pe-container">
-                <h2 data-lang="contact_title_api">
+                <!-- V3 Standard: Use 'ex_contact_title' from Core -->
+                <h2 data-lang="ex_contact_title">
                     <span class="material-symbols-outlined">contact_support</span>
                     문의하기
                 </h2>
-                <p class="pe-section__description" data-lang="contact_desc_api">궁금한 점은 언제든지 편하게 문의해 주세요.</p>
+                <p class="pe-section__description" data-lang="ex_contact_desc">궁금한 점은 언제든지 편하게 문의해 주세요.</p>
 
-                <!-- V2 BEM: .pe-form, .pe-contact-form -->
                 <form class="pe-form pe-contact-form" autocomplete="off">
-                    <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="contact_placeholder_email" placeholder="Email">
+                    <!-- V3 Standard: Use 'ex_placeholder' keys -->
+                    <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="ex_placeholder_email" placeholder="Email">
                     <div class="pe-form__textarea-wrapper">
-                        <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="contact_placeholder_message" placeholder="Message"></textarea>
+                        <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="ex_placeholder_msg" placeholder="Message"></textarea>
                         <div class="pe-form__char-counter">0/1024</div>
                     </div>
                     <button type="submit" class="pe-form__submit">
-                        <span class="pe-form__text" data-lang="contact_button_api">보내기</span>
-                        <span class="pe-form__loader hidden">
-                            <span class="material-symbols-outlined animate-spin">progress_activity</span>
-                        </span>
+                        <!-- V3 Standard: Use 'ex_btn_submit' key -->
+                        <span class="pe-form__text" data-lang="ex_btn_submit">보내기</span>
                     </button>
                     <div class="pe-form__status"></div>
                 </form>
@@ -191,29 +193,27 @@
         </section>
     </main>
 
-    <!-- V2 BEM: .pe-footer -->
+    <!-- Footer -->
     <footer class="pe-footer">
-        <p class="render-as-html" data-lang="copyright_text"></p>
+        <!-- V3 Standard: Use 'ex_copyright_text' from Core -->
+        <p class="render-as-html" data-lang="ex_copyright_text"></p>
     </footer>
 
     <a href="#home" id="to-top-btn" class="hidden">
         <span translate="no" class="material-symbols-outlined notranslate">arrow_upward</span>
     </a>
 
-    <!-- NEW V2 Turnstile Container -->
+    <!-- Turnstile Container (API) -->
     <div id="turnstile-container" style="position:absolute; top:-9999px; left:-9999px;"></div>
-
-    <!-- V2 Core JS -->
-    <script src="https://cdn.dam.so/_inc/express/page-v2.js" defer></script>
-    <!-- V2 User Config JS -->
-    <script src="./lay.js" defer></script>
+    
+    <!-- V3 Configuration -->
+    <script src="./lay.js"></script>
 
     <script>
+        // Naver Analytics (Preserved)
         if(!wcs_add) var wcs_add = {};
         wcs_add["wa"] = "s_4d76f57cd3a3";
-        if(window.wcs) {
-          wcs_do();
-        }
+        if(window.wcs) { wcs_do(); }
     </script>
 </body>
 </html>
