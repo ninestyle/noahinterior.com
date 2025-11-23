@@ -1,12 +1,16 @@
 /*
-    Version: 3.0.1
+    Version: 3.0.0 (V3 Refactored)
+    Framework: User Configuration (Tier 3)
     Last Modified: 2025-11-23
     Author: Maxim
-    Theme: NOAH INTERIOR - Wood Theme (V3 Config)
+    Theme: NOAH INTERIOR - Wood Theme
 */
 
 const siteConfig = {
-    // === Header Settings ===
+    // [기본 설정]
+    language: 'ko',
+
+    // [헤더 설정]
     canvas_image_type: 'cover',
     canvas_image_path: './section/',
     canvas_image_count: 3,
@@ -15,15 +19,9 @@ const siteConfig = {
     canvas_indicators: true,
     canvas_overlay: 'dotted',
     
-    // === Action Buttons (Header) ===
     icon_buttons: [
-        { name: 'Location', icon: 'location_on', url: '#location' },
-        { name: 'Contact', icon: 'contact_support', url: '#contact' }
-    ],
-
-    // === API Settings ===
-    API_BASE_PATH: 'https://agency.maxim.kr/api',
-    TURNSTILE_SITE_KEY: '0x4AAAAAACA4Lf2CF7viYhbJ',
+        { name: 'Location', icon: 'location_on', url: '#location' }
+    ]
 };
 
 // V3 Initialization

@@ -1,58 +1,108 @@
 /*
-    Theme: NOAH INTERIOR - Wood Theme
-    Compatible with Page Express V3
+    Version: 3.0.0 (V3 Refactored)
+    Framework: User Styles (Tier 3)
+    Last Modified: 2025-11-23
+    Author: Maxim
+    License: © 2025 Maxim. All Rights Reserved.
 */
 
 :root {
-    /* Mapping to V3 Core Variables */
-    
-    /* Backgrounds */
-    --ex-color-bg: #FCFBF8;           /* Main Background: Warm White */
-    --ex-color-surface: #F4F1EC;      /* Secondary/Card Bg: Beige Tone */
+    /* [V3 Core Mapping] */
+    /* Mapping user theme colors to Core variables for consistency */
     --ex-color-primary: #3E2723;      /* Headings: Dark Brown */
     --ex-color-secondary: #5D4037;    /* Text: Mid-tone Brown */
-    --ex-color-accent: #8B4513;       /* Accent/Buttons: SaddleBrown */
+    --ex-color-accent: #8B4513;       /* Brand Color: SaddleBrown */
+    --ex-color-bg: #FCFBF8;           /* Background: Warm White */
+    --ex-color-surface: #F4F1EC;      /* Surface: Beige Tone */
+    --ex-color-text: #3E2723;         /* Body Text */
     --ex-color-border: #E0E0E0;       /* Borders */
-    --ex-color-text: #3E2723;         /* Main Text */
 
-    /* Page V3 Specific Overrides */
+    /* [User Variables] */
+    --bg-primary: #FCFBF8;
+    --bg-secondary: #F4F1EC;
     --bg-navbar-animated: linear-gradient(45deg, rgba(252, 251, 248, 0.9), rgba(244, 241, 236, 0.95), rgba(252, 251, 248, 0.9));
-    --bg-footer: #3E2723;
+    --bg-card: #FFFFFF;
     --bg-button: #8B4513;
     --bg-button-hover: #A0522D;
-    --text-footer: #D7CCC8;
-    --text-button: #FFFFFF;
-    
+    --bg-lang-switcher: #F4F1EC;
+    --bg-lang-switcher-hover: #E0E0E0;
+    --bg-lang-switcher-active: #8B4513;
+    --bg-offer-badge: #8B4513;
     --bg-overlay: rgba(62, 39, 35, 0.55);
+
+    --text-primary: #3E2723;
+    --text-secondary: #5D4037;
+    --text-headings: #3E2723;
+    --text-accent: #8B4513;
+    --text-accent-hover: #A0522D;
+    --text-navbar: #3E2723;
+    --text-lang-switcher: #5D4037;
+    --text-lang-switcher-active: #FFFFFF;
+    --text-button: #FFFFFF;
+    --text-section-title-icon: #D7CCC8;
+    --text-header-title: #3E2723;
+    --text-header-subtitle: #5D4037;
+    --text-footer: #D7CCC8;
+    
+    --bg-footer: #3E2723;
+    --border-card: #E0E0E0;
+    --border-navbar-bottom: #E0E0E0;
+    --border-section-heading-underline: #8B4513;
+    
     --shadow-card: rgba(62, 39, 35, 0.08);
     --shadow-card-hover: rgba(62, 39, 35, 0.15);
-
-    /* Canvas Express Buttons */
-    --ce-input-bg-color: rgba(139, 69, 19, 0.7);
+    
+    --ce-canvas-rgb: 139, 69, 19;
     --ce-text-color: #FFFFFF;
+    --ce-input-bg-color: rgba(var(--ce-canvas-rgb), 0.7);
+    --ce-input-border-color: rgba(var(--ce-canvas-rgb), 0.5);
 }
 
-/* Dark Mode Overrides */
 @media (prefers-color-scheme: dark) {
     :root {
-        --ex-color-bg: #1c1817;
-        --ex-color-surface: #252120;
+        /* [V3 Core Mapping - Dark] */
         --ex-color-primary: #FFFFFF;
         --ex-color-secondary: #BCAAA4;
         --ex-color-accent: #D2B48C;   /* Tan */
-        --ex-color-border: #4a4442;
+        --ex-color-bg: #1c1817;
+        --ex-color-surface: #252120;
         --ex-color-text: #e0e0e0;
+        --ex-color-border: #4a4442;
 
+        /* [User Variables - Dark] */
+        --bg-primary: #1c1817;
+        --bg-secondary: #252120;
         --bg-navbar-animated: linear-gradient(45deg, rgba(28, 24, 23, 0.9), rgba(37, 33, 32, 0.95), rgba(28, 24, 23, 0.9));
-        --bg-footer: #121212;
+        --bg-card: #2e2928;
         --bg-button: #D2B48C;
         --bg-button-hover: #E6CFAA;
-        --text-footer: #888888;
+        --bg-lang-switcher: #3E2723;
+        --bg-lang-switcher-hover: #4E342E;
+        --bg-lang-switcher-active: #D2B48C;
+        --bg-offer-badge: #D2B48C;
+
+        --text-primary: #e0e0e0;
+        --text-secondary: #BCAAA4;
+        --text-headings: #FFFFFF;
+        --text-accent: #D2B48C;
+        --text-accent-hover: #E6CFAA;
+        --text-navbar: #FFFFFF;
+        --text-lang-switcher: #BCAAA4;
+        --text-lang-switcher-active: #1c1817;
         --text-button: #1c1817;
+        --text-section-title-icon: #5D4037;
+        --text-header-title: #FFFFFF;
+        --text-header-subtitle: #BCAAA4;
+        --text-footer: #888888;
+        
+        --bg-footer: #121212;
+        --border-card: #4a4442;
+        --border-navbar-bottom: #4a4442;
+        --border-section-heading-underline: #D2B48C;
         
         --bg-overlay: rgba(0, 0, 0, 0.65);
-        --ce-input-bg-color: rgba(210, 180, 140, 0.8);
-        --ce-text-color: #121212;
+        --ce-canvas-rgb: 210, 180, 140;
+        --ce-input-bg-color: rgba(var(--ce-canvas-rgb), 0.8);
     }
 }
 
@@ -75,4 +125,11 @@ body {
 
 .pe-header__title strong {
     font-weight: 700;
+}
+
+/* Specific Style Fixes for Noah Interior */
+.pe-address-block {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
 }

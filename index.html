@@ -1,13 +1,23 @@
+<!--
+    Version: 3.0.0 (V3 Refactored)
+    Framework: Page Express V3 (Tier 2) + Express Core (Tier 1)
+    Last Modified: 2025-11-23
+    Author: Maxim
+    Theme: NOAH INTERIOR
+    License: © 2025 Maxim. All Rights Reserved.
+-->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- SEO & Metadata -->
     <title data-lang="site_title">노아인테리어 - 목공 & 목조주택 전문</title>
     <meta name="description" data-lang="meta_description" content="노아인테리어는 내장 목공, 목조 주택 전문 업체입니다. 전주 및 전라북도 무료 출장 상담.">
     <meta name="keywords" content="노아인테리어, 전주 인테리어, 목공, 목조주택, 내장목공, 상업공간, 주거공간">
     
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.noahinterior.com">
     <meta property="og:site_name" content="노아인테리어">
@@ -32,6 +42,7 @@
 
     <!-- [Tier 3] User Theme -->
     <link rel="stylesheet" href="./lay.css">
+    <script src="./lay.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -53,7 +64,6 @@
         <div class="pe-header__content js-parallax-content">
             <h1 class="pe-header__title"><strong>NOAH</strong> INTERIOR</h1>
             <p class="pe-header__subtitle" data-lang="home_subtitle">전주 및 전라북도 무료 출장 상담</p>
-            <!-- Icon buttons injected by lay.js -->
         </div>
     </header>
 
@@ -143,7 +153,7 @@
             </div>
         </section>
 
-        <!-- Office/Contact Info Section -->
+        <!-- Office Info Section (Maintained) -->
         <section id="office" class="pe-section pe-section--secondary js-fade-in">
             <div class="pe-container">
                 <h2 data-lang="office_title"><span translate="no" class="material-symbols-outlined notranslate">contact_mail</span>연락처</h2>
@@ -166,51 +176,23 @@
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact" class="pe-section js-fade-in">
-            <div class="pe-container">
-                <!-- V3 Standard: Use 'ex_contact_title' from Core -->
-                <h2 data-lang="ex_contact_title">
-                    <span class="material-symbols-outlined">contact_support</span>
-                    문의하기
-                </h2>
-                <p class="pe-section__description" data-lang="ex_contact_desc">궁금한 점은 언제든지 편하게 문의해 주세요.</p>
-
-                <form class="pe-form pe-contact-form" autocomplete="off">
-                    <!-- V3 Standard: Use 'ex_placeholder' keys -->
-                    <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="ex_placeholder_email" placeholder="Email">
-                    <div class="pe-form__textarea-wrapper">
-                        <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="ex_placeholder_msg" placeholder="Message"></textarea>
-                        <div class="pe-form__char-counter">0/1024</div>
-                    </div>
-                    <button type="submit" class="pe-form__submit">
-                        <!-- V3 Standard: Use 'ex_btn_submit' key -->
-                        <span class="pe-form__text" data-lang="ex_btn_submit">보내기</span>
-                    </button>
-                    <div class="pe-form__status"></div>
-                </form>
-            </div>
-        </section>
+        <!-- Contact Form (Removed) -->
     </main>
 
     <!-- Footer -->
     <footer class="pe-footer">
-        <!-- V3 Standard: Use 'ex_copyright_text' from Core -->
-        <p class="render-as-html" data-lang="ex_copyright_text"></p>
+        <div class="pe-container">
+            <!-- V3 Core Standard Copyright -->
+            <p class="render-as-html" data-lang="ex_copyright_text"></p>
+        </div>
     </footer>
 
     <a href="#home" id="to-top-btn" class="hidden">
         <span translate="no" class="material-symbols-outlined notranslate">arrow_upward</span>
     </a>
 
-    <!-- Turnstile Container (API) -->
-    <div id="turnstile-container" style="position:absolute; top:-9999px; left:-9999px;"></div>
-    
-    <!-- V3 Configuration -->
-    <script src="./lay.js"></script>
-
+    <!-- Analytics (Preserved) -->
     <script>
-        // Naver Analytics (Preserved)
         if(!wcs_add) var wcs_add = {};
         wcs_add["wa"] = "s_4d76f57cd3a3";
         if(window.wcs) { wcs_do(); }
