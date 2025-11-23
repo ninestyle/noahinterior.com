@@ -1,162 +1,72 @@
 /*
-    Version: 2.1.0
-    Last Modified: 2025-11-14
-    Author: Maxim
-    License: © 2025 Maxim. All Rights Reserved.
-    Theme: NOAH INTERIOR - Wood Theme (V2 Migration)
+    Theme: NOAH INTERIOR - Wood Theme
+    Compatible with Page Express V3
 */
 
-/* =================================================================
-   1. Theme Variables (Unchanged from V1)
-================================================================= */
-
 :root {
-    /* Light Mode Defaults - Wood Theme */
-    --bg-primary: #FCFBF8; /* Slightly warm white */
-    --bg-secondary: #F4F1EC; /* Beige tone background */
-    --bg-navbar-animated: linear-gradient(45deg, rgba(252, 251, 248, 0.8), rgba(244, 241, 236, 0.85), rgba(252, 251, 248, 0.8));
-    --bg-footer: #3E2723; /* Dark brown */
-    --bg-card: #FFFFFF;
-    --bg-lang-switcher: #EFEBE9;
-    --bg-lang-switcher-hover: #D7CCC8;
-    --bg-lang-switcher-active: #8B4513; /* SaddleBrown */
-    --bg-nav-icon-button: #8B4513; /* (V1 Legacy) */
-    --bg-nav-icon-button-hover: #A0522D; /* (V1 Legacy) */
-    --bg-to-top-button: rgba(139, 69, 19, 0.7);
-    --bg-to-top-button-hover: rgba(139, 69, 19, 0.9);
-    --bg-overlay: rgba(62, 39, 35, 0.55); /* Dark brown overlay */
-    --bg-button: #8B4513; /* V1 cta-button -> V2 bg-button */
-    --bg-button-hover: #A0522D; /* V1 cta-button-hover -> V2 bg-button-hover */
-    --bg-price-info: #F4F1EC;
-    --bg-offer-badge: #8B4513;
-    --bg-price-image-placeholder: #EFEBE9;
-    --bg-modal: var(--bg-card);
-    --bg-modal-button: var(--bg-button);
-    --bg-modal-button-hover: var(--bg-button-hover);
-    --bg-form-input: #FFFFFF;
-    --bg-form-input-focus: #FFFFFF;
+    /* Mapping to V3 Core Variables */
+    
+    /* Backgrounds */
+    --ex-color-bg: #FCFBF8;           /* Main Background: Warm White */
+    --ex-color-surface: #F4F1EC;      /* Secondary/Card Bg: Beige Tone */
+    --ex-color-primary: #3E2723;      /* Headings: Dark Brown */
+    --ex-color-secondary: #5D4037;    /* Text: Mid-tone Brown */
+    --ex-color-accent: #8B4513;       /* Accent/Buttons: SaddleBrown */
+    --ex-color-border: #E0E0E0;       /* Borders */
+    --ex-color-text: #3E2723;         /* Main Text */
 
-    --text-primary: #3E2723;
-    --text-secondary: #5D4037; /* Mid-tone brown */
-    --text-headings: #3E2723;
-    --text-accent: #8B4513; /* SaddleBrown */
-    --text-accent-hover: #A0522D; /* Sienna */
+    /* Page V3 Specific Overrides */
+    --bg-navbar-animated: linear-gradient(45deg, rgba(252, 251, 248, 0.9), rgba(244, 241, 236, 0.95), rgba(252, 251, 248, 0.9));
+    --bg-footer: #3E2723;
+    --bg-button: #8B4513;
+    --bg-button-hover: #A0522D;
     --text-footer: #D7CCC8;
-    --text-navbar: #3E2723;
-    --text-lang-switcher: #5D4037;
-    --text-lang-switcher-active: #FFFFFF;
-    --text-nav-icon-button: #FFFFFF; /* (V1 Legacy) */
-    --text-to-top-button: #FFFFFF;
-    --text-header-title: #FFFFFF;
-    --text-header-subtitle: #F5F5F5;
-    --text-price-meta: #6D4C41;
-    --text-section-title-icon: #A1887F;
-    --text-button: #FFFFFF; /* V1 cta-button -> V2 text-button */
-    --text-offer-badge: #FFFFFF;
-    --text-modal: var(--text-primary);
-    --text-modal-button: var(--text-button);
-    --text-form-input: #3E2723;
-    --text-form-placeholder: #777777;
-    --text-form-loader: var(--text-accent);
-
-    --border-card: #E0E0E0;
-    --border-navbar-bottom: rgba(62, 39, 35, 0.1);
-    --border-section-heading-underline: #8B4513;
-    --border-form-input: #CCCCCC;
-    --border-form-input-focus: var(--text-accent);
-
+    --text-button: #FFFFFF;
+    
+    --bg-overlay: rgba(62, 39, 35, 0.55);
     --shadow-card: rgba(62, 39, 35, 0.08);
     --shadow-card-hover: rgba(62, 39, 35, 0.15);
-    --shadow-navbar: rgba(0, 0, 0, 0.05);
-    --shadow-header-text: rgba(0, 0, 0, 0.4);
-    --shadow-header-subtitle-text: rgba(0, 0, 0, 0.6);
-    --shadow-offer-badge: rgba(0, 0, 0, 0.2);
 
-    --image-filter-default: none;
-
-    /* CE (Canvas Express) Variables for V2 Header Buttons */
-	--ce-canvas-rgb: 255, 255, 255;
-    --ce-text-color: #FFF;
-    --ce-input-bg-color: rgba(139, 69, 19, 0.7); /* Brown button bg */
-    --ce-input-border-color: rgba(255, 255, 255, 0.3);
+    /* Canvas Express Buttons */
+    --ce-input-bg-color: rgba(139, 69, 19, 0.7);
+    --ce-text-color: #FFFFFF;
 }
 
+/* Dark Mode Overrides */
 @media (prefers-color-scheme: dark) {
     :root {
-        /* Dark Mode Defaults - Wood Theme */
-        --bg-primary: #1c1817;
-        --bg-secondary: #252120;
-        --bg-navbar-animated: linear-gradient(45deg, rgba(28, 24, 23, 0.8), rgba(37, 33, 32, 0.85), rgba(28, 24, 23, 0.8));
+        --ex-color-bg: #1c1817;
+        --ex-color-surface: #252120;
+        --ex-color-primary: #FFFFFF;
+        --ex-color-secondary: #BCAAA4;
+        --ex-color-accent: #D2B48C;   /* Tan */
+        --ex-color-border: #4a4442;
+        --ex-color-text: #e0e0e0;
+
+        --bg-navbar-animated: linear-gradient(45deg, rgba(28, 24, 23, 0.9), rgba(37, 33, 32, 0.95), rgba(28, 24, 23, 0.9));
         --bg-footer: #121212;
-        --bg-card: #2f2a29;
-        --bg-lang-switcher: #3e3836;
-        --bg-lang-switcher-hover: #4e4846;
-        --bg-lang-switcher-active: #D2B48C; /* Tan */
-        --bg-nav-icon-button: #D2B48C; /* (V1 Legacy) */
-        --bg-nav-icon-button-hover: #E6CFAA; /* (V1 Legacy) */
-        --bg-to-top-button: rgba(210, 180, 140, 0.7);
-        --bg-to-top-button-hover: rgba(210, 180, 140, 0.9);
-        --bg-overlay: rgba(0, 0, 0, 0.65);
-        --bg-button: #D2B48C; /* V1 cta-button -> V2 bg-button */
-        --bg-button-hover: #E6CFAA; /* V1 cta-button-hover -> V2 bg-button-hover */
-        --bg-form-input: #2f2a29;
-        --bg-form-input-focus: #252120;
-        
-        --text-primary: #e0e0e0;
-        --text-secondary: #BCAAA4;
-        --text-headings: #FFFFFF;
-        --text-accent: #D2B48C; /* Tan */
-        --text-accent-hover: #E6CFAA;
+        --bg-button: #D2B48C;
+        --bg-button-hover: #E6CFAA;
         --text-footer: #888888;
-        --text-navbar: #e0e0e0;
-        --text-lang-switcher: #e0e0e0;
-        --text-lang-switcher-active: #121212;
-        --text-nav-icon-button: #121212; /* (V1 Legacy) */
-        --text-to-top-button: #121212;
-        --text-price-meta: #BCAAA4;
-        --text-section-title-icon: #A1887F;
-        --text-button: #1c1817; /* V1 cta-button -> V2 text-button */
-        --text-form-input: #e0e0e0;
-        --text-form-placeholder: #888888;
-        --text-form-loader: var(--text-accent);
-
-        --border-card: #4a4442;
-        --border-navbar-bottom: rgba(210, 180, 140, 0.2);
-        --border-section-heading-underline: #D2B48C;
-        --border-form-input: #555555;
-        --border-form-input-focus: var(--text-accent);
-
-        --shadow-card: rgba(0, 0, 0, 0.2);
-        --shadow-card-hover: rgba(0, 0, 0, 0.3);
-        --shadow-navbar: rgba(0, 0, 0, 0.2);
-        --shadow-home-text: rgba(0, 0, 0, 0.5);
-        --shadow-home-subtitle-text: rgba(0, 0, 0, 0.7);
-
-        --image-filter-default: brightness(0.9) contrast(1.05);
-
-        /* CE (Canvas Express) Variables for V2 Header Buttons */
-        --ce-canvas-rgb: 255, 255, 255;
+        --text-button: #1c1817;
+        
+        --bg-overlay: rgba(0, 0, 0, 0.65);
+        --ce-input-bg-color: rgba(210, 180, 140, 0.8);
         --ce-text-color: #121212;
-        --ce-input-bg-color: rgba(210, 180, 140, 0.8); /* Tan button bg */
-        --ce-input-border-color: rgba(210, 180, 140, 0.5);
     }
 }
 
-/* =================================================================
-   2. Custom Fonts & Base Styles (V2 Selectors)
-================================================================= */
+/* Fonts */
 body {
     font-family: 'Noto Sans KR', 'Poppins', sans-serif;
 }
 
-/* V1 #navbar .logo -> V2 .pe-nav__logo */
 .pe-nav__logo {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-/* V1 #home h1 -> V2 .pe-header__title */
 .pe-header__title {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -165,30 +75,4 @@ body {
 
 .pe-header__title strong {
     font-weight: 700;
-}
-
-/* =================================================================
-   3. V2 Component Theming
-================================================================= */
-
-/* Apply V1 CTA Button theme to new V2 components */
-.pe-button,
-.pe-form__submit {
-    background-color: var(--bg-button);
-    color: var(--text-button);
-    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
-}
-
-.pe-button:hover,
-.pe-form__submit:hover {
-    background-color: var(--bg-button-hover);
-    color: var(--text-button);
-}
-
-/* Dark mode override for V2 buttons */
-@media (prefers-color-scheme: dark) {
-    .pe-button,
-    .pe-form__submit {
-        box-shadow: 0 4px 15px rgba(210, 180, 140, 0.2);
-    }
 }

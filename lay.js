@@ -1,34 +1,36 @@
 /*
-    Version: 2.1.0
-    Last Modified: 2025-11-14
+    Version: 3.0.1
+    Last Modified: 2025-11-23
     Author: Maxim
-    License: © 2025 Maxim. All Rights Reserved.
-    Theme: NOAH INTERIOR - V2 Config
+    Theme: NOAH INTERIOR - Wood Theme (V3 Config)
 */
 
 const siteConfig = {
-    // === Header Canvas & Image Settings ===
-    // V1 used a 3-image slider
+    // === Header Settings ===
     canvas_image_type: 'cover',
     canvas_image_path: './section/',
     canvas_image_count: 3,
-    canvas_image_format: 'webp', // User specified format
-    canvas_image_slide: 5, // Default 5 seconds
-    canvas_indicators: true, // V1 had indicators
-    canvas_overlay: 'dotted', // V1 had 'has-dot-pattern'
+    canvas_image_format: 'webp',
+    canvas_image_slide: 5,
+    canvas_indicators: true,
+    canvas_overlay: 'dotted',
     
-    // === Header Icon Buttons (User Request) ===
+    // === Action Buttons (Header) ===
     icon_buttons: [
         { name: 'Location', icon: 'location_on', url: '#location' },
         { name: 'Contact', icon: 'contact_support', url: '#contact' }
     ],
 
-    // === API Settings (User Request) ===
-    API_BASE_PATH: 'https://agency.maxim.kr/api',
+    // === API Settings ===
+    API_BASE_PATH: 'https://www.maxim.pe.kr/api',
     TURNSTILE_SITE_KEY: '0x4AAAAAACA4Lf2CF7viYhbJ',
 };
 
-// V2 Core System Initialization
+// V3 Initialization
 document.addEventListener('DOMContentLoaded', () => {
-    PE_V2.init(siteConfig);
+    if (typeof PE_V3 !== 'undefined') {
+        PE_V3.init(siteConfig);
+    } else {
+        console.error("Page Express V3 libraries not loaded.");
+    }
 });
