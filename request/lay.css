@@ -1,0 +1,16 @@
+/* Layout Overrides for Request Page */
+.request-area-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.request-area-group .pv-input {
+    flex: 1;
+}
+
+.request-area-group .pv-select {
+    width: 150px;
+    flex: 0 0 150px;
+    /* Fixed 150px width */
+}
